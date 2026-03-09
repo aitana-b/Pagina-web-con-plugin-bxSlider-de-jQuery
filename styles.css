@@ -368,3 +368,61 @@ footer {
     background: transparent !important;
 }
 
+
+/* para Formulario: */
+#contacto{
+    width:65%;
+    margin:30px auto;
+    padding:25px;
+    background:#FBF5EF;
+    box-shadow:0px 0px 2px gray;
+    text-align:center;
+}
+
+#contacto h2{
+    font-size:30px;
+    color:#3B170B;
+    margin-bottom:20px;
+}
+
+#contacto label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+    text-align:left;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#contacto input,
+#contacto textarea{
+    width:70%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#contacto textarea{
+    resize:none;
+}
+
+#contacto input[type="submit"] {
+    margin-top:20px;
+    padding:10px;
+    border-radius:20px;
+    border:none;
+    background-color:#04B4AE;
+    color:white;
+    cursor:pointer;
+    width:200px;
+    transition:background-color 0.3s;
+}
+
+#contacto input[type="submit"]:hover {
+    background-color:#bb3621;
+}
