@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bxSlider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css"/>
+    <!-- bxSlider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="main.js"></script>
+
+    <meta charset="utf-8" />
+    <title>Cafele Zakia</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!--javascript-->
+    <script type="text/javascript" src="main.js"></script>
+
+  </head>
+  <body>
+
+    <section id="global">
+
+      <!--Header-->
+      <header>
+
+        <div class="f">
+          <script>
+            var f = new Date();
+            document.write('<div class="f">');
+            document.write(f);
+            document.write('</div>');
+          </script>
+        </div>
+
+        <div id="logo">
+          <h1>Cafele Zakia</h1>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <nav id="menu">
+          <ul>
+            <li><a href="Cafelezakia.html">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#menu-section">Menú</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+          </ul>
+        </nav>
+
+        <!-- Slider -->
+        <div id="slider">
+          <div class="galeria">
+            <div><img src="img/cafe1.png"></div>
+            <div><img src="img/cafe2.png"></div>
+            <div><img src="img/cafe3.png"></div>
+            <div><img src="img/cafe4.png"></div>
+          </div>
+        </div>
+
+      </header>
+
+      
+
+    </section>
+
+    <!--Nosotros-->
+    <section id="nosotros">
+      <h2>Nosotros</h2>
+      <p>CAFELE es un concepto único que ofrece café de especialidad, alimentos y bebidas durante todo el día.</p>
+      <p>Creamos un ambiente cálido, acogedor y familiar para todos nuestros cafelers.</p>
+    </section>
+
+    <!--menu-->
+    <section id="menu-section">
+      <h2>Menú</h2>
+
+      <div id="menu-tabs">
+        <button class="mtab active" onclick="switchTab('bebidas', this)">Bebidas</button>
+        <button class="mtab" onclick="switchTab('alimentos', this)">Alimentos</button>
+        <button class="mtab" onclick="switchTab('panaderia', this)">Panadería</button>
+      </div>
+
+      <div id="bebidas" class="mpanel active">
+        <div class="mcard"><p class="mcard-name">Long Black</p><p class="mcard-price">$39</p></div>
+        <div class="mcard"><p class="mcard-name">Espresso</p><p class="mcard-price">$34</p></div>
+        <div class="mcard"><p class="mcard-name">Americano</p><p class="mcard-price">$38</p></div>
+        <div class="mcard"><p class="mcard-name">Café Azteca</p><p class="mcard-price">$54</p></div>
+        <div class="mcard"><p class="mcard-name">Capuchino</p><p class="mcard-price">$54</p></div>
+        <div class="mcard"><p class="mcard-name">Latte</p><p class="mcard-price">$54</p></div>
+      </div>
+
+      <div id="alimentos" class="mpanel">
+        <div class="mcard"><p class="mcard-name">Chilaquiles</p><p class="mcard-price">$93</p></div>
+        <div class="mcard"><p class="mcard-name">Enchiladas Suizas</p><p class="mcard-price">$125</p></div>
+        <div class="mcard"><p class="mcard-name">Molletes</p><p class="mcard-price">$62</p></div>
+      </div>
+
+      <div id="panaderia" class="mpanel">
+        <div class="mcard"><p class="mcard-name">Chocolatín</p><p class="mcard-price">$29</p></div>
+        <div class="mcard"><p class="mcard-name">Croissant Nutella</p><p class="mcard-price">$29</p></div>
+        <div class="mcard"><p class="mcard-name">Rol de Canela</p><p class="mcard-price">$29</p></div>
+      </div>
+
+    </section>
+
+    <!-- Ubicación -->
+    <section class="ubicacion" id="ubicacion">
+      <h3 class="titulo">Ubicación</h3>
+
+      <div class="direccion">
+        <h4>Dirección</h4>
+        <p class="calle">Paseos de Zakia Pte. 300<br />Fraccionamiento Zakia, Querétaro</p>
+        <p class="telefono">(999) 999-9999</p>
+        <p class="correo">cafelezakia@correo.com</p>
+      </div>
+      <div class="horarios">
+        <h4>Horarios</h4>
+        <table class="hor-table">
+          <tr id="hr-1"><td>Lunes</td><td>7:00 – 22:00</td></tr>
+          <tr id="hr-2"><td>Martes</td><td>7:00 – 22:00</td></tr>
+          <tr id="hr-3"><td>Miércoles</td><td>7:00 – 22:00</td></tr>
+          <tr id="hr-4"><td>Jueves</td><td>7:00 – 22:00</td></tr>
+          <tr id="hr-5"><td>Viernes</td><td>7:00 – 22:00</td></tr>
+          <tr id="hr-6"><td>Sábado</td><td>7:00 – 22:00</td></tr>
+          <tr id="hr-0"><td>Domingo</td><td>7:00 – 22:00</td></tr>
+        </table>
+        <div id="spill" class="status-pill">
+          <div class="sdot"></div>
+          <span id="stxt">…</span>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </section>
+
+    <!--mapa-->
+    <section class="mapa">
+      <br />
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29865.22928376027!2d-100.31346437933945!3d20.663326599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35d6acda3fda3%3A0x5f19a097de67c58!2sCafele%20Zakia!5e0!3m2!1ses-419!2smx!4v1772961689509!5m2!1ses-419!2smx"
+        width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <footer>
+      <p>Copyright 2025 Cafele Zakia</p>
+      <a href="#" class="subir">Ir arriba</a>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,370 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+body {
+    background-color: #f5f0e8;
+    font-family: Helvetica, Arial;
+}
+
+/* ── GLOBAL ── */
+#global {
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 25px;
+    background: #3B170B;
+    box-shadow: 0px 0px 2px gray;
+}
+
+/* ── FECHA ── */
+.f {
+    font-family: Verdana, Arial;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: #2a9d8f;
+    text-align: right;
+}
+
+/* ── LOGO ── */
+#logo {
+    font-family: Verdana, Arial;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 75px;
+    background: #FBF5EF;
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    float: left;
+    text-transform: uppercase;
+}
+
+/* ── MENÚ NAV ── */
+#menu {
+    font-family: Helvetica, Arial;
+    background: #04B4AE;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#menu ul {
+    line-height: 46px;
+    list-style: none;
+}
+
+#menu ul li {
+    height: 46px;
+    display: inline-block;
+    transition: all 300ms;
+}
+
+#menu ul li:hover {
+    background: #FBF5EF;
+}
+
+#menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* ── SLIDER ── */
+#slider {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.galeria img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.bx-wrapper, .bx-viewport {
+    height: 300px !important;
+}
+
+.bx-wrapper {
+    margin-left: 0px;
+}
+
+/* ── NOSOTROS ── */
+#nosotros {
+    width: 65%;
+    margin: 30px auto;
+    padding: 25px;
+    background: #FBF5EF;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#nosotros h2 {
+    font-family: Helvetica, Arial;
+    font-size: 30px;
+    color: #3B170B;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #04B4AE;
+    padding-bottom: 8px;
+}
+
+#nosotros p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* ── SECCIÓN MENÚ ── */
+#menu-section {
+    width: 65%;
+    margin: 30px auto;
+    padding: 25px;
+    background: #FBF5EF;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#menu-section h2 {
+    font-family: Helvetica, Arial;
+    font-size: 30px;
+    color: #3B170B;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #04B4AE;
+    padding-bottom: 8px;
+}
+
+#menu-tabs {
+    margin-bottom: 20px;
+}
+
+.mtab {
+    background: white;
+    border: 2px solid #04B4AE;
+    color: #04B4AE;
+    font-family: Helvetica, Arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: -2px;
+}
+
+.mtab.active,
+.mtab:hover {
+    background: #04B4AE;
+    color: white;
+}
+
+.mpanel {
+    display: none;
+}
+
+.mpanel.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.mcard {
+    background: white;
+    border-top: 4px solid #04B4AE;
+    border: 1px solid #ddd;
+    border-top: 4px solid #04B4AE;
+    padding: 15px;
+}
+
+.mcard-name {
+    font-family: Helvetica, Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3B170B;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.mcard-price {
+    font-size: 18px;
+    color: #04B4AE;
+    font-weight: bold;
+}
+
+/* ── UBICACIÓN ── */
+.ubicacion {
+    width: 65%;
+    margin: 0 auto;
+    background: rgba(4, 180, 174, 0.80);
+    padding: 30px 50px;
+    overflow: hidden;
+}
+
+.ubicacion .titulo {
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.ubicacion .direccion {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.ubicacion .horarios {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.ubicacion .direccion {
+    overflow: hidden;
+}
+
+.ubicacion .horarios {
+    overflow: hidden;
+}
+
+.ubicacion .calle {
+    margin-bottom: 15px;
+}
+
+.ubicacion h4 {
+    font-size: 16px;
+    color: #3B170B;
+    margin-bottom: 8px;
+}
+
+.ubicacion p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Tabla horarios */
+.hor-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.hor-table tr {
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.hor-table tr:last-child {
+    border-bottom: none;
+}
+
+.hor-table td {
+    padding: 4px 0;
+    color: #333;
+}
+
+.hor-table td:last-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+.hor-table tr.hoy td {
+    color: #3B170B;
+    font-weight: 700;
+}
+
+.hor-table tr.hoy td:first-child::after {
+    content: ' ◀';
+    font-size: 0.65rem;
+}
+
+/* Badge abierto/cerrado */
+.status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.status-pill.open   { background: #e8f5e9; color: #2e7d32; }
+.status-pill.closed { background: #fbe9e7; color: #c62828; }
+
+.sdot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.status-pill.open .sdot {
+    animation: blink 1.4s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.3; }
+}
+
+/* ── MAPA ── */
+.mapa {
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.mapa iframe {
+    width: 80%;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ──FOOTER── */
+footer {
+    font-family: Helvetica, Arial;
+    color: white;
+    height: 47px;
+    background: rgba(51, 51, 51, 0.70);
+    margin: 0px auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    line-height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subir {
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+
+/* Quitar borde del bxSlider */
+.bx-wrapper {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
