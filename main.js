@@ -1,6 +1,31 @@
 $(document).ready(function(){
 
-    console.log(typeof $.fn.bxSlider);
+    // FORMULARIO CONTACTO
+    $('#formContacto').submit(function(e){
+
+        e.preventDefault();
+
+        var nombre = $('#nombre').val();
+        var email = $('#email').val();
+        var mensaje = $('#mensaje').val();
+
+        if(nombre == "" || email == "" || mensaje == ""){
+            alert("Por favor completa todos los campos");
+            return;
+        }
+
+        $('#mensajeExito')
+        .hide()
+        .text("Mensaje enviado correctamente. ¡Gracias por contactarnos!")
+        .fadeIn(800);
+
+        $('#formContacto')[0].reset();
+
+        // ocultar mensaje después de 3 segundos
+        setTimeout(function(){
+            $('#mensajeExito').fadeOut(800);
+        }, 3000);
+    });
 
     // Slider
     $('.galeria').bxSlider({
